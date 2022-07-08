@@ -1,7 +1,20 @@
-const DiaryEditor = () => {
-    return(
-    <div className = "DiaryEditor">
+import {useState} from "react";
 
+const DiaryEditor = () => {
+    const [author, setAuthor] = useState("");
+
+    return(
+        <div className = "DiaryEditor">
+        <h2>일기장 만들기</h2>
+        <div>
+            <input 
+            value={author} 
+            onChange={(e)=> {
+                console.log(e.target.value);
+                setAuthor(e.target.value);
+            }}
+            />
+        </div>
     </div>
     );
 };
