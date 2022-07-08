@@ -8,7 +8,7 @@ const DiaryEditor = () => {
     const [state, setState] = useState({
         author:"", 
         content:"",
-        emotion: 1,
+        emotion: 3,
     });
 
     const handleChangeState = (e) => {
