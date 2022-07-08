@@ -1,4 +1,5 @@
 import {useRef, useState} from "react";
+import App from "./App.css";
 
 const DiaryEditor = ({onCreate}) => {
 
@@ -59,7 +60,7 @@ const DiaryEditor = ({onCreate}) => {
                 name="emotion" 
                 value={state.emotion}
                 onChange={handleChangeState}
-            >               
+            >           
                 <option value={1}>매우 별로</option>
                 <option value={2}>별로</option>
                 <option value={3}>그럭저럭</option>

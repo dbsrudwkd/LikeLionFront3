@@ -1,4 +1,5 @@
 import DiaryItem from "./DiaryItem";
+import App from "./App.css";
 
 const DiaryList = ({diaryList}) => {
     console.log(diaryList);
@@ -6,7 +7,7 @@ const DiaryList = ({diaryList}) => {
         <div className='DiaryList'>
             <h2>Diary List</h2>
             <h4>일기가 {diaryList.length}개 있습니다.</h4>
-            <div>
+            <div className="DiaryBlock">
                 {diaryList.map((it) => (
                     <DiaryItem key={it.id} {...it}/>
                 ))}

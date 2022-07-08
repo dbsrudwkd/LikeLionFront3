@@ -3,30 +3,6 @@ import DiaryEditor from './DiaryEditor';
 import DiaryList from "./DiaryList";
 import { useState, useRef } from "react";
 
-// const dummyList = [
-//   {
-//     id:1,
-//     author:"나",
-//     content:"지금 아침 6시야,,,",
-//     emotion:3,
-//     created_date: new Date().getTime(),
-//   },
-//   {
-//     id:2,
-//     author:"나",
-//     content:"지금 아침 6시야,,,",
-//     emotion:3,
-//     created_date: new Date().getTime(),
-//   },
-//   {
-//     id:3,
-//     author:"나",
-//     content:"지금 아침 6시야,,,",
-//     emotion:3,
-//     created_date: new Date().getTime(),
-//   }
-// ]
-
 const App = () => {
   const [data, setData] = useState([]);
 
